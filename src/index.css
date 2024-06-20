@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* styling for rest password start */
+
+.resetFont{
+    font-family: 'Nunito', sans-serif;
+}
+
+.responsiveBackground{
+    background: linear-gradient(to bottom, rgba(253, 253, 253, 0.8), rgba(253, 253, 253, 0.8)),  url(./assets/resetPasswordAmico1.png);
+    background-size: contain;
+    background-position:bottom;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+}
+
+.hide {
+  display: none;
+}
+
+.errmsg {
+  background-color: lightpink;
+  color: #f04438;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.instructions {
+  font-size: 0.8rem;
+  border-radius: 0.3rem;
+  color: red;
+  padding: 0.05rem;
+  position: relative;
+}
+
+.instructions > svg {
+  margin-right: 0.25rem;
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+.forgot-bgImage {
+  display: block;
+}
+
+.icon-uses {
+  width: 25px;
+  position: absolute;
+  float: left;
+}
+
+.feature-image {
+  width: 100%;
+  height: auto;
+}
+
+.mx-30 {
+  margin-left: 30rem;
+  margin-right: 30rem;
+}
+
+.getintouch-image {
+  width: 100px;
+  border-radius: 50%;
+  margin-right: -10px;
+}
+
+.submit-icon {
+  position: relative;
+  float: right;
+  margin-top: -40px;
+  border-radius: 50%;
+  background: #4b04a0;
+  padding: 8px;
+  margin-right: 5px;
+}
+
+.newsletter-field {
+  width: 350px;
+  float: calc(100% - 50%);
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  form {
+    padding: 0 3rem;
+  }
+
+  .adjustIcon {
+    display: block;
+    margin-top: -10%;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1049px) {
+  .responsiveWidth {
+    margin: 0 auto;
+    padding: 1rem 3rem 0 3rem;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .forgot-bgImage {
+    display: none;
+  }
+
+  .px-16 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .pl-\[8rem\] {
+    padding-left: 1rem !important;
+  }
+
+  .p-16 {
+    padding: 1rem;
+  }
+
+  .mx-30 {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .flex-md {
+    display: grid;
+  }
+
+  .mx-16-md {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .mx-30 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .getintouch-image {
+    width: 60px;
+    border-radius: 50%;
+    margin-right: -10px;
+  }
+}
+/* styling for rest password end */
